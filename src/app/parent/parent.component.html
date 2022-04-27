@@ -1,0 +1,22 @@
+<p>getting from child:{{ data }}</p>
+<app-child [uname]="username" (notify)="getData($event)"></app-child>
+<p>counter: {{ child.counter }}</p>
+<button (click)="inc()">increment</button>
+<button (click)="dec()">decrement</button>
+<app-child #child></app-child>
+<div class="row">
+  <div class="col-md-6">
+    <app-child [products]="salesProducts">
+      <h1 #head class="header" >clearance store</h1>
+      <!-- <h1 class="header" #head>Grab fast</h1> -->
+      <a href="" class="link">visit more..</a>
+    </app-child>
+  </div>
+  <!--<div class="col-md-6">
+        
+        <app-child [products]="Topproducts">
+            <h1 class="header">top store</h1>
+            <a href="" class="link">see more..</a>
+        </app-child>
+    </div>-->
+</div>

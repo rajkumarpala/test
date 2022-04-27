@@ -1,0 +1,21 @@
+<p>Getting data from parent component:{{ uname }}</p>
+<button (click)="sendData()">send data to parent</button>
+<p #highlight>View child example</p>
+<p #multihighlight>View children example 1</p>
+<p #multihighlight>view children example 2</p>
+
+<ng-content select=".header"></ng-content>
+<div *ngFor="let prod of products">
+  <ul class="list-group list-group-numbered">
+    <li
+      class="list-group-item d-flex justify-content-between align-items-start"
+    >
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">{{ prod.name }}</div>
+      </div>
+      <span class="badge bg-primary rounded-pill">{{ prod.price }}</span>
+    </li>
+   
+  </ul>
+  <ng-content select=".link"></ng-content>
+</div>
