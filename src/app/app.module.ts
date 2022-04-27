@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { CparentComponent } from './cparent/cparent.component';
 import { CchildComponent } from './cparent/cchild/cchild.component';
 import { BluebackgroundDirective } from './bluebackground.directive';
+import { RedbackgroundDirective } from './redbackground.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { BluebackgroundDirective } from './bluebackground.directive';
     CparentComponent,
     CchildComponent,
     BluebackgroundDirective,
+    RedbackgroundDirective,
     
   ],
   imports: [
