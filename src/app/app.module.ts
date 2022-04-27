@@ -10,6 +10,7 @@ import { CparentComponent } from './cparent/cparent.component';
 import { CchildComponent } from './cparent/cchild/cchild.component';
 import { BluebackgroundDirective } from './bluebackground.directive';
 import { RedbackgroundDirective } from './redbackground.directive';
+import { OrangebackgroundDirective } from './orangebackground.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { RedbackgroundDirective } from './redbackground.directive';
     CchildComponent,
     BluebackgroundDirective,
     RedbackgroundDirective,
+    OrangebackgroundDirective,
     
   ],
   imports: [
